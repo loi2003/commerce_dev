@@ -1,0 +1,47 @@
+docker compose up -d --build
+
+docker exec -it wordpress bash
+cd /var/www/html
+php -d memory_limit=512M /usr/local/bin/wp core download --allow-root ( cho phép tài force tràn bộ nhớ )
+wp core download --allow-root
+
+flow của template là URL request -> WP Query -> Block template system -> template-canvas.php( core) -> template/*.html(theme)->part/*.html
+
+vào sql: docker exec -it mysql mysql -u poser -p
+wppassword
+
+SHOW DATABASES;
+USE wordpress;
+SHOW TABLES;
+
+tạo 1 db sử dụng: docker exec -it mysql mysql -u root -p
+CREATE DATABASE auth_db;
+DROP TABLE users;
+
+CREATE TABLE `users` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `role` enum('admin','user') NOT NULL DEFAULT 'user',
+  `password` varchar(255) NOT NULL,
+  `gender` varchar(20) DEFAULT NULL,
+  `age` int DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE `otp_sessions` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL,
+  `otp_code` varchar(6) NOT NULL,
+  `expires_at` datetime NOT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+ALTER TABLE users
+ADD wp_user_id BIGINT NULL;
+
+cmd /c "docker exec -i mysql mysql -u root -prootpassword --default-character-set=utf8mb4 wordpress < wordpress_final.sql" 

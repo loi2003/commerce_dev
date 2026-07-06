@@ -1,0 +1,381 @@
+/* ========================================
+   SIDE BANNERS FOR WOOCOMMERCE - STYLES
+   ======================================== */
+
+/* Wrapper chính */
+.sbw-banners-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 998;
+}
+
+.sbw-banners-wrapper .sbw-banner {
+    pointer-events: auto;
+}
+
+/* ========== VỊ TRÍ - SÁT MÉP TRANG ========== */
+.sbw-position-middle .sbw-banner-left {
+    position: fixed;
+    left: 0px;  /* SÁT MÉP TRÁI */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sbw-position-middle .sbw-banner-right {
+    position: fixed;
+    right: 0px;  /* SÁT MÉP PHẢI */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sbw-position-top .sbw-banner-left {
+    position: fixed;
+    left: 0px;  /* SÁT MÉP TRÁI */
+    top: 170px;
+    transition: top 0.3s ease, opacity 0.3s ease;
+}
+
+.sbw-position-top .sbw-banner-right {
+    position: fixed;
+    right: 0px;  /* SÁT MÉP PHẢI */
+    top: 170px;
+    transition: top 0.3s ease, opacity 0.3s ease;
+}
+
+.sbw-position-bottom .sbw-banner-left {
+    position: fixed;
+    left: 0px;  /* SÁT MÉP TRÁI */
+    bottom: 70px;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+.sbw-position-bottom .sbw-banner-right {
+    position: fixed;
+    right: 0px;  /* SÁT MÉP PHẢI */
+    bottom: 70px;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+/* ========== BANNER KÍCH THƯỚC 410x700px ========== */
+.sbw-banner-inner {
+    position: relative;
+    background: transparent;
+    border-radius: 0px;  /* BỎ BO GÓC ĐỂ SÁT MÉP */
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sbw-banner-inner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.45);
+}
+
+.sbw-banner-inner a {
+    display: block;
+    line-height: 0;
+}
+
+.sbw-banner-inner img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px;  /* BỎ BO GÓC ĐỂ SÁT MÉP */
+    min-width: 360px;
+    max-width: 460px;
+    min-height: 600px;   /* SỬA: 560 -> 600 */
+    max-height: 800px;   /* SỬA: 750 -> 800 */
+    object-fit: cover;
+}
+
+/* ========== NÚT ĐÓNG BANNER ========== */
+.sbw-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 44px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+    padding: 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sbw-banner-inner:hover .sbw-close-btn {
+    opacity: 1;
+}
+
+.sbw-close-btn:hover {
+    background: rgba(220, 50, 50, 1);
+    transform: scale(1.15) rotate(90deg);
+    border-color: #fff;
+    box-shadow: 0 6px 25px rgba(220, 50, 50, 0.5);
+}
+
+/* ========== ẨN BANNER ========== */
+.sbw-banner.hidden {
+    display: none !important;
+}
+
+.sbw-banner.scroll-hide {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* ========== ANIMATION ========== */
+.sbw-banner {
+    animation: sbwFadeIn 0.7s ease forwards;
+}
+
+@keyframes sbwFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+    }
+}
+
+.sbw-position-top .sbw-banner {
+    animation: sbwSlideDown 0.7s ease forwards;
+}
+
+@keyframes sbwSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sbw-position-bottom .sbw-banner {
+    animation: sbwSlideUp 0.7s ease forwards;
+}
+
+@keyframes sbwSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========== RESPONSIVE ========== */
+/* Màn hình lớn */
+@media (max-width: 1920px) {
+    .sbw-banner-inner img {
+        min-width: 380px !important;
+        max-width: 440px !important;
+        min-height: 620px !important;
+        max-height: 740px !important;
+    }
+}
+
+/* Laptop lớn */
+@media (max-width: 1600px) {
+    .sbw-banner-inner img {
+        min-width: 340px !important;
+        max-width: 400px !important;
+        min-height: 560px !important;
+        max-height: 680px !important;
+    }
+    .sbw-position-top .sbw-banner-left,
+    .sbw-position-top .sbw-banner-right {
+        top: 150px !important;
+    }
+    .sbw-position-middle .sbw-banner-left {
+        left: 0px !important;
+    }
+    .sbw-position-middle .sbw-banner-right {
+        right: 0px !important;
+    }
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+    .sbw-banner-inner img {
+        min-width: 300px !important;
+        max-width: 360px !important;
+        min-height: 500px !important;
+        max-height: 620px !important;
+    }
+    .sbw-position-top .sbw-banner-left,
+    .sbw-position-top .sbw-banner-right {
+        top: 130px !important;
+    }
+    .sbw-position-middle .sbw-banner-left {
+        left: 0px !important;
+    }
+    .sbw-position-middle .sbw-banner-right {
+        right: 0px !important;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .sbw-banner-inner img {
+        min-width: 240px !important;
+        max-width: 300px !important;
+        min-height: 400px !important;
+        max-height: 520px !important;
+    }
+    .sbw-position-top .sbw-banner-left,
+    .sbw-position-top .sbw-banner-right {
+        top: 110px !important;
+    }
+    .sbw-position-middle .sbw-banner-left {
+        left: 0px !important;
+    }
+    .sbw-position-middle .sbw-banner-right {
+        right: 0px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .sbw-banners-wrapper {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .sbw-banners-wrapper.mobile-show {
+        display: block !important;
+    }
+    
+    .sbw-banner-inner img {
+        min-width: 140px !important;
+        max-width: 180px !important;
+        min-height: 220px !important;
+        max-height: 300px !important;
+    }
+    
+    .sbw-position-top .sbw-banner-left,
+    .sbw-position-top .sbw-banner-right {
+        top: 75px !important;
+    }
+    
+    .sbw-close-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 24px;
+        top: 8px;
+        right: 8px;
+    }
+}
+
+/* ========== PADDING CHO SITE CONTENT - SÁT MÉP HƠN ========== */
+.sbw-banners-wrapper ~ #page .site-content {
+    padding-left: 400px !important;   /* TĂNG LÊN ĐỂ TRÁNH BANNER */
+    padding-right: 400px !important;  /* TĂNG LÊN ĐỂ TRÁNH BANNER */
+    transition: padding 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 1600px) {
+    .sbw-banners-wrapper ~ #page .site-content {
+        padding-left: 360px !important;
+        padding-right: 360px !important;
+    }
+}
+
+@media (max-width: 1366px) {
+    .sbw-banners-wrapper ~ #page .site-content {
+        padding-left: 310px !important;
+        padding-right: 310px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sbw-banners-wrapper ~ #page .site-content {
+        padding-left: 240px !important;
+        padding-right: 240px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .sbw-banners-wrapper ~ #page .site-content {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+/* ========== ĐẢM BẢO HEADER TRÊN BANNER ========== */
+.site-header,
+#site-header,
+.header,
+#header,
+#masthead,
+.site-header-main,
+.header-main,
+.header-wrapper,
+.main-header,
+.nav-header,
+header#top,
+header.site-header {
+    position: relative;
+    z-index: 9999 !important;
+}
+
+.sticky-header,
+.fixed-header,
+.sticky-header-shrink,
+.is-sticky {
+    z-index: 9999 !important;
+}
+
+#wpadminbar {
+    z-index: 99999 !important;
+}
+
+/* ========== HIỆU ỨNG GLOW ========== */
+.sbw-banner-inner::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #ff6b6b);
+    background-size: 400% 400%;
+    border-radius: 0px;  /* BỎ BO GÓC */
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    animation: gradientMove 3s ease infinite;
+}
+
+.sbw-banner-inner:hover::before {
+    opacity: 0.12;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

@@ -1,0 +1,54 @@
+.sa-home {
+    padding: 20px;
+}
+
+.sa-block {
+    margin-bottom: 40px;
+}
+
+.sa-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.sa-slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.sa-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.sa-card {
+    flex: 0 0 200px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+.sa-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.sa-info {
+    padding: 10px;
+}
+
+.sa-name {
+    font-size: 14px;
+    height: 38px;
+    overflow: hidden;
+}
+
+.sa-price {
+    color: #e60023;
+    font-weight: bold;
+    margin-top: 5px;
+}

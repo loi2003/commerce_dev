@@ -1,0 +1,71 @@
+.has-text-align-left {text-align: right;}
+.has-text-align-right {text-align:left;}
+.wp-block-navigation .wp-block-navigation-item ul {right:auto !important;}
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], input[type="search"], input[type="url"], input[type="password"], textarea{ text-align:right;}
+.alignright {float:left !important;}
+.alignleft {float:right !important;}
+.nature21-better-taste-box .wp-block-image{ float:right;}
+.nature21-section7-left h2 {padding-right:0px !important;}
+.nature21-section8 .wp-block-column {padding:0px !important;}
+.nature21-section11-right .wp-block-column, .nature21-section11-right .wp-block-columns {border:none;}
+.nature21-footer-menu .wp-block-navigation__container li {padding-right:20px;}
+.nature21-footer-menu .wp-block-navigation__container li::before { left:auto; right:0px;}
+.nature21-footer-column .wp-block-column:nth-child(1) {padding-right:0px !important; padding-left:8%;}
+.nature21-blog-content {padding-left:20px !important; padding-right:30px !important;}
+.nature21-blog-right-side-page {padding-left:0px !important; padding-right:25px !important;}
+.nature21-contact-form .wp-block-group {padding-right:0px !important; padding-left:100px;}
+.nature21-blog-single-right-area {padding-left:0px !important; padding-right:25px !important;}
+.nature21-blog-single-left-area .wp-block-group ul, .nature21-blog-right-side-area .wp-block-group ul, .nature21-blog-widget-area .wp-block-group ul, .nature21-archive-right .wp-block-group ul{padding-right:15px !important; padding-left:0px !important;}
+.wpcf7-form p {text-align:right;}
+.nature21-service-menu {padding-right:0px !important; padding-left:60px !important;}
+.nature21-service-menu ul{ padding-left:0px !important; padding-right:25px !important;}
+.nature21-blog-left-side-area {padding-right:0px !important; padding-left:50px !important;}
+.nature21-archive-left {padding-right:0px !important; padding-left:60px !important;}
+.nature21-section9-box .wp-block-column:nth-child(2) {padding-left:0px !important; padding-right:15px !important;}
+.wp-block-navigation__submenu-container ul.wp-block-navigation__submenu-container {left:-100% !important;}
+.wp-block-navigation .wp-block-navigation-item ul {left:-100% !important;}
+.nature21-section7-right .wp-block-image{left: 0; right:auto;}
+.nature21-section11-left {margin:0px !important; margin-left:60px !important;}
+.nature21-section11-left .wp-block-group {padding-right:0px !important; padding-left:70px !important;}
+.nature21-menu-section::before { right:0px; left:auto;}
+.nature21-section5-left::after {right:0px; left:auto;}
+.nature21-home-contact input[type="text"], .nature21-home-contact input[type="email"], .nature21-home-contact input[type="tel"], .nature21-home-contact textarea{ text-align:right; padding-right:40px;}
+.nature21-contact-box {padding-right:0px !important;}
+.nature21-footer-menu .wp-block-navigation ul li, .nature21-footer-column .wp-block-navigation ul li {padding-right:20px;}
+.nature21-footer-menu .wp-block-navigation ul li::before, .nature21-footer-column .wp-block-navigation ul li::before {left:auto; right:0px; transform:rotate(180deg); top:0px;}
+.wp-block-navigation .wp-block-navigation__submenu-icon{ margin-left:0px; margin-right:10px;}
+.nature21-menu .wp-block-navigation ul ul .wp-block-navigation__submenu-icon{left: 15px; right:auto; transform:rotate(180deg);}
+.nature21-404 ul.wp-block-post-template li .wp-block-column {padding:0px 20px !important;}
+.nature21-pricing-box h6.wp-block-heading sub{left:auto; right:5px;}
+.nature21-business-social {padding-right:50px; padding-left:0px;}
+@media(max-width: 1023px){
+.nature21-better-taste-box .wp-block-image{ float:none;}
+.nature21-blog-right-side-page {padding-left:0px !important; padding-right:0px !important;}
+.nature21-contact-form .wp-block-group{ padding:0px !important;}
+.nature21-blog-single-right-area {padding-left:0px !important; padding-right:0px !important;}
+.nature21-pagination .wp-block-column, .nature21-pagination .post-navigation-link-next {text-align:center !important;}
+.nature21-blog-content{padding-right:0px !important; padding-left:0px !important;}
+.nature21-archive-left, .nature21-blog-left-side-area{ padding:0px !important;}
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.nature21-banner-content, .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.nature21-banner-image{ text-align:right;}
+.nature21-section11-left{ margin-left:0px !important;}
+.nature21-discount-box{ right:auto; left:-60px; padding-right:0px !important;}
+.nature21-section7-left {padding-bottom:60px !important;}
+.nature21-post-section .wp-block-post-date, .nature21-post-section h4.wp-block-post-title, .nature21-post-section .wp-block-post-excerpt {padding-right:0px !important;}
+.nature21-logo h1 {font-size:24px !important;}
+.nature21-business-social {padding-right:0px; padding-left:0px;}
+}
+
+@media(max-width: 599px){
+.nature21-header-menu {right:auto; left:0;}	
+.nature21-banner h2.has-text-color{ width:80%;}
+.nature21-team-section .wp-block-heading, .nature21-post-section .wp-block-heading {padding:0px !important; padding-bottom: 35px !important;}
+}
+
+@media (min-width: 781px) and (max-width: 1023px) {
+.nature21-contact-section-left h2.has-text-color {font-size:32px !important; padding-bottom: 0 !important;}
+.nature21-section4 h2.has-text-color {font-size:32px !important; }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+.nature21-banner-content .wp-block-heading {padding:0px 200px !important;}
+}

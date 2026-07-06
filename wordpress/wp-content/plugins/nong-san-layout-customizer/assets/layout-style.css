@@ -1,0 +1,278 @@
+/* ============================================================
+   NÔNG SẢN LAYOUT CUSTOMIZER - MAIN STYLES
+   Version: 2.0.0
+   ============================================================ */
+
+/* ============================================================
+   1. CĂN CHỈNH ẢNH CÂN ĐỐI - QUAN TRỌNG
+   ============================================================ */
+
+/* 1.1 - Ảnh sản phẩm WooCommerce */
+.woocommerce ul.products li.product img,
+.wc-block-product .wc-block-components-product-image img,
+.wc-block-components-product-image img {
+    width: 100% !important;
+    height: 280px !important;
+    min-height: 280px !important;
+    max-height: 280px !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    aspect-ratio: 1 / 1 !important;
+    display: block !important;
+    transition: transform 0.5s ease !important;
+}
+
+/* 1.2 - Ảnh trong các columns */
+.wp-block-columns .wp-block-column figure img,
+.wp-block-column figure img {
+    width: 100% !important;
+    height: 320px !important;
+    min-height: 320px !important;
+    max-height: 320px !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    aspect-ratio: 4 / 3 !important;
+    display: block !important;
+}
+
+/* 1.3 - Ảnh trong cover block */
+.wp-block-cover img.wp-block-cover__image-background,
+.wp-block-cover .wp-block-cover__image-background {
+    object-fit: cover !important;
+    object-position: center center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* 1.4 - Ảnh thumbnail trong product collection */
+.wc-block-product .wc-block-components-product-image img {
+    width: 100% !important;
+    height: 250px !important;
+    min-height: 250px !important;
+    max-height: 250px !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    aspect-ratio: 1 / 1 !important;
+}
+
+/* ============================================================
+   2. CHỮ MÀU TRẮNG
+   ============================================================ */
+
+/* 2.1 - Chữ trắng trên nền tối (hero, cover, sections có nền đen/xanh đậm) */
+.wp-block-cover .wp-block-cover__inner-container,
+.wp-block-cover .wp-block-cover__inner-container *,
+.wp-block-cover.is-light .wp-block-cover__inner-container h2,
+.wp-block-cover.is-light .wp-block-cover__inner-container p {
+    color: #ffffff !important;
+}
+
+.wp-block-cover .wp-block-cover__inner-container h1,
+.wp-block-cover .wp-block-cover__inner-container h2,
+.wp-block-cover .wp-block-cover__inner-container h3,
+.wp-block-cover .wp-block-cover__inner-container h4,
+.wp-block-cover .wp-block-cover__inner-container p,
+.wp-block-cover .wp-block-cover__inner-container span,
+.wp-block-cover .wp-block-cover__inner-container a {
+    color: #ffffff !important;
+}
+
+/* 2.2 - Section có nền tối từ gradient */
+.wp-block-group.has-background .wp-block-group__inner-container h2,
+.wp-block-group.has-background .wp-block-group__inner-container p,
+.wp-block-group.has-background .wp-block-group__inner-container * {
+    color: #ffffff !important;
+}
+
+/* 2.3 - Chữ trắng trên button */
+.wp-block-button .wp-block-button__link,
+.wc-block-components-product-button .wp-block-button__link {
+    color: #ffffff !important;
+}
+
+/* 2.4 - Chữ trắng trong footer */
+.site-footer,
+.site-footer *,
+.site-footer .widget,
+.site-footer .widget * {
+    color: #ffffff !important;
+}
+
+.site-footer a {
+    color: #a5d6a7 !important;
+}
+
+.site-footer a:hover {
+    color: #ffffff !important;
+}
+
+/* ============================================================
+   3. LAYOUT - FULL WIDTH
+   ============================================================ */
+
+* {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.site-content,
+#content,
+.site-main,
+.entry-content,
+.entry-content .wp-block-group,
+.entry-content .wp-block-group__inner-container,
+.wp-block-group,
+.wp-block-group__inner-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.col-full,
+.site-content .col-full,
+#content .col-full,
+.entry-content .col-full {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 40px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* ============================================================
+   4. PRODUCT GRID - CÂN ĐỐI
+   ============================================================ */
+
+.woocommerce ul.products,
+.wc-block-product-template__responsive,
+.storefront-product-section ul.products {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+    gap: 25px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+/* Card sản phẩm */
+.woocommerce ul.products li.product,
+.wc-block-product,
+.storefront-product-section ul.products li.product {
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.3s ease !important;
+    border: 1px solid rgba(67, 160, 71, 0.08) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+}
+
+.woocommerce ul.products li.product:hover,
+.wc-block-product:hover,
+.storefront-product-section ul.products li.product:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Nội dung trong card */
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.wc-block-product h2,
+.storefront-product-section ul.products li.product h2 {
+    padding: 10px 15px 0 !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    text-align: center !important;
+}
+
+.woocommerce ul.products li.product .price,
+.wc-block-product .wc-block-components-product-price,
+.storefront-product-section ul.products li.product .price {
+    padding: 5px 15px 10px !important;
+    text-align: center !important;
+}
+
+/* ============================================================
+   5. RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 992px) {
+    .woocommerce ul.products,
+    .wc-block-product-template__responsive,
+    .storefront-product-section ul.products {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+        gap: 20px !important;
+    }
+    
+    .woocommerce ul.products li.product img,
+    .wc-block-product .wc-block-components-product-image img,
+    .wc-block-components-product-image img {
+        height: 220px !important;
+        min-height: 220px !important;
+        max-height: 220px !important;
+    }
+    
+    .wp-block-columns .wp-block-column figure img,
+    .wp-block-column figure img {
+        height: 250px !important;
+        min-height: 250px !important;
+        max-height: 250px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-full,
+    .site-content .col-full,
+    #content .col-full,
+    .entry-content .col-full {
+        padding: 0 15px !important;
+    }
+    
+    .woocommerce ul.products,
+    .wc-block-product-template__responsive,
+    .storefront-product-section ul.products {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+    
+    .woocommerce ul.products li.product img,
+    .wc-block-product .wc-block-components-product-image img,
+    .wc-block-components-product-image img {
+        height: 180px !important;
+        min-height: 180px !important;
+        max-height: 180px !important;
+    }
+    
+    .wp-block-columns .wp-block-column figure img,
+    .wp-block-column figure img {
+        height: 200px !important;
+        min-height: 200px !important;
+        max-height: 200px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .woocommerce ul.products,
+    .wc-block-product-template__responsive,
+    .storefront-product-section ul.products {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
+    }
+    
+    .woocommerce ul.products li.product img,
+    .wc-block-product .wc-block-components-product-image img,
+    .wc-block-components-product-image img {
+        height: 140px !important;
+        min-height: 140px !important;
+        max-height: 140px !important;
+    }
+    
+    .wp-block-columns .wp-block-column figure img,
+    .wp-block-column figure img {
+        height: 150px !important;
+        min-height: 150px !important;
+        max-height: 150px !important;
+    }
+}

@@ -1,0 +1,149 @@
+@font-face{font-family: 'Poppins'; font-weight: 100; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-Thin.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 100; font-style: italic; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-ThinItalic.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 200; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-ExtraLight.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 200; font-style: italic; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-ExtraLightItalic.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 300; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-Light.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 300; font-style: italic; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-LightItalic.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 400; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-Regular.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 400; font-style: italic; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-Italic.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 500; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-Medium.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 500; font-style: italic; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-MediumItalic.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 600; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-SemiBold.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 600; font-style: italic; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-SemiBoldItalic.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 700; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-Bold.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 700; font-style: italic; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-BoldItalic.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 800; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-ExtraBold.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 800; font-style: italic; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-ExtraBoldItalic.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 900; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-Black.woff2');}
+@font-face{font-family: 'Poppins'; font-weight: 900; font-style: italic; font-stretch: normal; font-display: swap; src: url('./assets/fonts/Poppins-BlackItalic.woff2');}
+@font-face{font-family: 'Playfair Display'; font-weight: 400; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/PlayfairDisplay-Regular.woff2');}
+@font-face{font-family: 'Playfair Display'; font-weight: 400; font-style: italic; font-stretch: normal; font-display: swap; src: url('./assets/fonts/PlayfairDisplay-Italic.woff2');}
+@font-face{font-family: 'Playfair Display'; font-weight: 500; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/PlayfairDisplay-Medium.woff2');}
+@font-face{font-family: 'Playfair Display'; font-weight: 600; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/PlayfairDisplay-SemiBold.woff2');}
+@font-face{font-family: 'Playfair Display'; font-weight: 700; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/PlayfairDisplay-Bold.woff2');}
+@font-face{font-family: 'Playfair Display'; font-weight: 800; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/PlayfairDisplay-ExtraBold.woff2');}
+@font-face{font-family: 'Playfair Display'; font-weight: 900; font-style: normal; font-stretch: normal; font-display: swap; src: url('./assets/fonts/PlayfairDisplay-Black.woff2');}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+  color: inherit;
+}
+body h1 {
+  font-size: 2.5rem;
+}
+body h2 {
+  font-size: 2rem;
+}
+body h3 {
+  font-size: 1.75rem;
+}
+body h4 {
+  font-size: 1.5rem;
+}
+body h5 {
+  font-size: 1.25rem;
+}
+body h6 {
+  font-size: 1rem;
+}
+body p {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
+
+img {
+  height: auto;
+}
+
+.wp-site-blocks > * {
+  margin-top: 0!important;
+}
+
+.editor-styles-wrapper .nature21-menu {margin:0 85px 0 0; min-height:85px;}
+.editor-styles-wrapper .nature21-menu{font-family:'Poppins', sans-serif; border-radius:50px 25px 0 0; position:relative; background-color:#FFF; min-height:85px;}
+.editor-styles-wrapper .nature21-menu:before{content: ''; position: absolute; left: -66.5px; top: 8px; width: 0; height: 0; border-bottom: 77px solid #fff; border-left: 89px solid transparent;}
+.editor-styles-wrapper .nature21-join-area {padding-top:80px !important;}
+.editor-styles-wrapper .nature21-banner {padding-bottom:80px !important;}
+.editor-styles-wrapper .nature21-green-headingbox .wp-block-image {margin-block-start:0px !important;}
+.editor-styles-wrapper .nature21-banner{ background-position:center center; padding-top:0px !important;}
+.editor-styles-wrapper .nature21-header-area{background-color:#9cc893;}
+.editor-styles-wrapper .nature21-wrap-banner{position:relative;}
+.editor-styles-wrapper .nature21-banner-content-area{position:absolute; left: 0; right: 0; top: 46%; z-index: 999; transform: translateY(-46%); left:6%;}
+.editor-styles-wrapper .nature21-btn-more a:hover{background-color:#599e03 !important; color:#FFF !important; text-decoration:none;}
+.editor-styles-wrapper .nature21-green-headingbox{margin:0 70px 0 70px !important; position:relative; background-color: #66b406 !important;}
+.editor-styles-wrapper .nature21-green-headingbox h2{display:inline-block !important; vertical-align:middle;}
+.editor-styles-wrapper .nature21-green-headingbox{ padding-top:0px !important}
+.editor-styles-wrapper .nature21-green-headingbox figure{display:inline-block !important; width:auto !important; max-width:inherit !important;}
+.editor-styles-wrapper .nature21-green-headingbox img{display:inline-block !important; position:relative; top:10px; left:40px;}
+.editor-styles-wrapper .nature21-green-headingbox:after{content:''; position:absolute; top:-26px; right:-83px; width: 0; height: 0; border-top: 112px solid #66b406; border-right: 100px solid transparent;}
+.editor-styles-wrapper .nature21-home-social .wp-social-link a{padding: .75em;}
+.editor-styles-wrapper .nature21-home-social .wp-social-link:hover{background-color:#66b406 !important;}
+.editor-styles-wrapper .nature21-green-bar-area{position:relative; z-index:999; overflow:hidden;}
+body.home .nature21-join-area{margin-top:-350px;}
+.editor-styles-wrapper .nature21-join-area{position:relative;}
+.editor-styles-wrapper .nature21-join-area:after{content: ""; position: absolute; background:url(assets/images/involve-back-bg.png) center top no-repeat; width:auto; height:474px; top:23%; right:0; left:0; z-index:1;}
+.editor-styles-wrapper .nature21-green-group-goup{ position:relative; z-index:99; overflow:hidden;}
+.editor-styles-wrapper .nature21-involvebox{position: relative; display: inline-block; overflow: hidden; border-radius: 25px;}
+.editor-styles-wrapper .nature21-involvebox img{transition: transform 0.4s ease;}
+.editor-styles-wrapper .nature21-involvebox::after{content: ""; position: absolute; inset: 0; background-color: rgba(80, 142, 18, 0.7); opacity: 0; transition: opacity 0.4s ease;}
+.editor-styles-wrapper .nature21-involvebox:hover::after, .nature21-btr-cols-b1:hover .nature21-involvebox::after{opacity: 1;}
+.editor-styles-wrapper .nature21-involvebox:hover img, .nature21-btr-cols-b1:hover .nature21-involvebox img{transform: scale(1.1);}
+.editor-styles-wrapper .nature21-involvebox:hover::after, .nature21-btr-cols-b2:hover .nature21-involvebox::after{opacity: 1;}
+.editor-styles-wrapper .nature21-involvebox:hover img, .nature21-btr-cols-b2:hover .nature21-involvebox img{transform: scale(1.1);}
+.editor-styles-wrapper .nature21-involvebox:hover::after, .nature21-btr-cols-b3:hover .nature21-involvebox::after{opacity: 1;}
+.editor-styles-wrapper .nature21-involvebox:hover img, .nature21-btr-cols-b3:hover .nature21-involvebox img{transform: scale(1.1);}
+.editor-styles-wrapper .nature21-btr-cols-b1 .wp-block-buttons{display:none; transition: transform 0.2s ease;}
+.editor-styles-wrapper .nature21-btr-cols-b1 .nature21-build-area{margin-top:-130px;}
+.editor-styles-wrapper .nature21-btr-cols-b1:hover .wp-block-buttons{display:block;}
+.editor-styles-wrapper .nature21-btr-cols-b1:hover .nature21-build-area{margin-top:-200px;}
+.editor-styles-wrapper .nature21-btr-cols-b2 .wp-block-buttons{display:none; transition: transform 0.2s ease;}
+.editor-styles-wrapper .nature21-btr-cols-b2 .nature21-build-area{margin-top:-130px;}
+.editor-styles-wrapper .nature21-btr-cols-b2:hover .wp-block-buttons{display:block;}
+.editor-styles-wrapper .nature21-btr-cols-b2:hover .nature21-build-area{margin-top:-200px;}
+.editor-styles-wrapper .nature21-btr-cols-b2 .nature21-build-area{margin-left:30px;}
+.editor-styles-wrapper .nature21-btr-cols-b3 .wp-block-buttons{display:none; transition: transform 0.2s ease;}
+.editor-styles-wrapper .nature21-btr-cols-b3 .nature21-build-area{margin-top:-130px;}
+.editor-styles-wrapper .nature21-btr-cols-b3:hover .wp-block-buttons{display:block;}
+.editor-styles-wrapper .nature21-btr-cols-b3:hover .nature21-build-area{margin-top:-200px;}
+.editor-styles-wrapper .nature21-btr-cols-b3 .nature21-build-area{margin-left:30px;}
+.editor-styles-wrapper .nature21-build-area{margin-top:-200px; margin-left:50px; float:left;}
+.editor-styles-wrapper .nature21-btr-cols-b1 .nature21-btn-more a:hover, .nature21-btr-cols-b2 .nature21-btn-more a:hover, .nature21-btr-cols-b3 .editor-styles-wrapper .nature21-btn-more a:hover{background-color:#1c470f !important;}
+.editor-styles-wrapper .nature21-projects-large-text h2.wp-block-heading{font-size:320px !important;}
+.editor-styles-wrapper .nature21-friendly-world-left{ position:relative;}
+.editor-styles-wrapper .nature21-friendly-world-image-box{position:absolute; width:275px !important; right:0; top:50%; transform:translate(-0%, -50%);}
+.editor-styles-wrapper .nature21-friendly-world-left::before {content:''; width:45%; height:100%; border:solid 2px #66b406; position:absolute; right:125px; top:0%; border-radius: 20px; z-index:3;}
+.editor-styles-wrapper .nature21-friendly-world-left .wp-block-image img {z-index: 9 !important; position: relative;}
+.editor-styles-wrapper .nature21-friendly-world-image-box{ z-index:9;}
+.editor-styles-wrapper .nature21-services-box-icon {width:110px; margin:0 auto 25px !important}
+.editor-styles-wrapper .nature21-services-section {background-position: bottom center; background-repeat:repeat-x; background-size:contain !important;}
+.editor-styles-wrapper .nature21-solutions-section::before {content:''; width:45%; height:100%; background:rgba(9, 22, 12, 0.6); position:absolute; left:50%; top:0; transform:translateX(-50%);}
+.editor-styles-wrapper .nature21-solutions-section .wp-block-columns .wp-block-column {z-index:9;}
+.editor-styles-wrapper .nature21-donation-section {background-position:top center; background-size:inherit !important; background-repeat:no-repeat; background-position-y:15%;}
+.editor-styles-wrapper .nature21-post-list li{margin-bottom:35px; display:inline-block; width:47.4%; position:relative; padding:0px 15px !important;}
+.editor-styles-wrapper .nature21-post-list li:last-child{border-bottom:none;}
+.editor-styles-wrapper .nature21-post-list li a.wp-block-latest-posts__post-title{text-decoration:none; color: #fff; font-weight: 600; font-size: 27px; position:absolute; left: 8%; bottom:80px; width:70%; line-height:1.4;}
+.editor-styles-wrapper .nature21-post-list li a:hover.wp-block-latest-posts__post-title{color:#599e03;}
+.editor-styles-wrapper .nature21-post-list li a.wp-block-latest-posts__read-more{background-color:#599e03; display:table; padding:10px 25px; margin-top:15px; border-radius: 250px; color:#FFF; text-decoration:none; text-transform:uppercase;}
+.editor-styles-wrapper .nature21-post-list li a:hover.wp-block-latest-posts__read-more{background-color:#282828;}
+.editor-styles-wrapper .nature21-post-list li .wp-block-latest-posts__featured-image {width: 100%; height:auto; overflow:hidden; border-radius:20px; margin-right:0px !important;}
+.editor-styles-wrapper .nature21-post-list li .wp-block-latest-posts__post-date{position:absolute; left:8%; bottom:50px; color:#fff; font-size:18px; font-weight:500;}
+.editor-styles-wrapper .nature21-volunteers-title {text-shadow:7px 7px 0px #144120; letter-spacing: -8px; font-size: 200px !important;}
+.editor-styles-wrapper .nature21-testimonial-left h3{font-size:30px !important;}
+.editor-styles-wrapper .nature21-testimonial-left h4{font-size:110px !important;}
